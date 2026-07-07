@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MJK LAB | Impressão 3D Personalizada</title>
+  <meta name="description" content="MJK LAB: produtos personalizados em impressão 3D, chaveiros, lembrancinhas, brindes, decoração e projetos exclusivos." />
+  <link rel="stylesheet" href="estilo.css" />
+</head>
+<body>
+  <header class="topo">
+    <div class="brand">
+      <img src="logo-mjk.jpg" alt="Logo MJK LAB" class="logo" />
+      <div><h1>MJK <span>LAB</span></h1><p>Impressão 3D personalizada</p></div>
+    </div>
+    <input id="busca" placeholder="Buscar produtos..." />
+    <div class="redes"><a target="_blank" href="https://wa.me/5541988347653">WhatsApp</a><a target="_blank" href="https://instagram.com/mjk.lab">@mjk.lab</a></div>
+  </header>
+
+  <nav class="menu"><a href="#inicio" class="ativo">Início</a><a href="#produtos">Produtos</a><a href="#galeria">Galeria</a><a href="#contato">Contato</a><a href="#painel">Painel</a></nav>
+
+  <section id="inicio" class="hero">
+    <div><small>MJK LAB</small><h2>Transformamos ideias em <span>produtos reais</span></h2><p>Chaveiros, lembrancinhas, brindes, decoração e peças personalizadas feitas em impressão 3D com qualidade e atenção aos detalhes.</p><div class="botoes"><a class="btn" target="_blank" href="https://wa.me/5541988347653?text=Olá!%20Gostaria%20de%20fazer%20um%20orçamento%20com%20a%20MJK%20LAB.">Pedir orçamento</a><a class="btn secundario" href="#produtos">Ver produtos</a></div></div>
+    <div class="heroCard"><img src="logo-mjk.jpg" alt="MJK LAB"><h3>Produtos personalizados para você, sua empresa ou evento.</h3></div>
+  </section>
+
+  <section class="beneficios"><div>⭐ Qualidade premium</div><div>🚚 Produção rápida</div><div>🎨 Personalizado</div><div>📲 Atendimento pelo WhatsApp</div></section>
+
+  <main id="produtos" class="secao"><p class="tag">Catálogo</p><h2>Produtos em destaque</h2><div id="categorias" class="categorias"></div><div id="listaProdutos" class="grid"></div></main>
+
+  <section id="galeria" class="secao escura"><p class="tag">Galeria</p><h2>Trabalhos da MJK LAB</h2><div class="galeria"><div>Chaveiros personalizados</div><div>Lembrancinhas para festas</div><div>Brindes para empresas</div><div>Decoração e presentes</div></div></section>
+
+  <section id="painel" class="secao painel"><p class="tag">Painel</p><h2>Adicionar ou editar produtos</h2><p class="aviso">Os produtos salvos aqui ficam gravados no navegador deste computador. Para publicar no GitHub, depois exporte e me envie os dados para atualizar o site oficial.</p>
+    <form id="formProduto" class="form">
+      <input type="hidden" id="editId" />
+      <input id="nome" placeholder="Nome do produto" required />
+      <input id="preco" placeholder="Preço. Ex: 15,00" required />
+      <select id="categoria"><option>Chaveiros</option><option>Lembrancinhas</option><option>Brindes</option><option>Decoração</option><option>Geek</option><option>Organizadores</option><option>Empresas</option></select>
+      <textarea id="descricao" placeholder="Descrição do produto" required></textarea>
+      <input id="imagem" type="file" accept="image/*" />
+      <button class="btn" type="submit">Salvar produto</button><button class="btn secundario" type="button" id="limpar">Limpar</button>
+    </form>
+  </section>
+
+  <footer id="contato"><img src="logo-mjk.jpg" alt="MJK LAB"><div><b>MJK LAB</b><p>Impressão 3D personalizada</p></div><div><a target="_blank" href="https://wa.me/5541988347653">WhatsApp: (41) 98834-7653</a><a target="_blank" href="https://instagram.com/mjk.lab">Instagram: @mjk.lab</a></div></footer>
+  <a class="whats" target="_blank" href="https://wa.me/5541988347653?text=Olá!%20Vim%20pelo%20site%20da%20MJK%20LAB.">WhatsApp</a>
+  <script src="script.js"></script>
+</body>
+</html>
